@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Manual interactivo de Python</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="inicio">Manual interactivo de Python</h1>
+        </header>
+        <div id="menu">
+            <ul>
+                <li class="has-sub"><a href="">Conceptos Básicos de Python</a>
+                    <ul>
+                        <li><a href="#intro-python">Python (Introducción)</a></li>
+                        <li><a href="#lib_python">Librerías de Python</a></li>
+                        <li><a href="#tipos_datos">Tipos de datos</a></li>
+                        <li><a href="#variables">Variables</a></li>
+                        <li><a href="#print">Print</a></li>
+                        <li><a href="#ope-arit">Operadores aritméticos</a></li>
+                        <li><a href="#ope-comp">Operadores comparativos</a></li>
+                        <li><a href="#ope-log">Operadores lógicos</a></li>
+                        <li><a href="#formato">Formateo</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub"><a href="">Estructuras y Manipulación de Datos</a>
+                    <ul>
+                        <li><a href="#string">Strings</a></li>
+                        <li><a href="#list">Listas</a></li>
+                        <li><a href="#tuples">Tuples</a></li>
+                        <li><a href="#sets">Sets</a></li>
+                        <li><a href="#dictionari">Los diccionarios</a></li>
+                    </ul>
+                <li class="has-sub"><a href="">Control de Flujo, Funciones y Módulos</a>
+                    <ul>
+                        <li><a href="condicionales">Condicionales</a></li>
+                        <li><a href="#bucles">Bucles</a></li>
+                        <li><a href="#funciones">Funciones</a></li>
+                        <li><a href="#clases">Clases</a></li>
+                        <li><a href="#excepciones">Excepciones</a></li>
+                        <li><a href="#modulos">Módulos</a></li>
+                    </ul>
+            </ul>
+        </div>
+        <main>
+            <h1 id="intro-python">PYTHON</h1>
+            <p>
+                Python es un lenguaje que apareció en 1991 quiere decir que tiene 
+                más de 30 años pero su utilización en diferentes campos ha ido en 
+                aumento situándolo en este 2022 como el lenguaje de programación más. 
+                Es un lenguaje un tanto intuitivo y es un leguaje muy directo.
+                Python es un lenguaje de programación de alto nivel, interpretado y de 
+                propósito general, conocido por su sintaxis clara y legible. Fue creado 
+                por Guido van Rossum y lanzado por primera vez en 1991. Python es ampliamente 
+                utilizado en diversos campos como desarrollo web, ciencia de datos, 
+                inteligencia artificial, automatización de tareas y más.
+                <ul>
+                    <li><b>Sintaxis Simple y Clara: </b>Facilita la lectura y escritura del código.</li>
+                    <li><b>Multiparadigma:</b> Soporta programación orientada a objetos, funcional y procedimental.</li>
+                    <li><b>Gran Ecosistema:</b> Posee una vasta biblioteca estándar y una gran cantidad de bibliotecas de terceros.</li>
+                    <li><b>Portabilidad:</b> Funciona en múltiples plataformas como Windows, macOS y Linux.</li>
+                    <li><b>Comunidad Activa:</b> Gran cantidad de recursos, documentación y soporte comunitario.</li>
+                </ul>
+            
+            <section id="lib_python">
+                <h2>Librerías de Python:</h2>
+                <img src="Imagenes/librerias de pyhton.png" alt="Librerías de Python" class="img_libreria_python">
+            </section>
+            <section id="tipos_datos">
+                <h2>Tipos de datos:</h2>
+                    <table>
+                        <tr>
+                            <th>Variable</th>
+                            <th>Concepto</th>
+                        </tr>
+                        <tr>
+                            <td class="font_type">String (str)</td>
+                            <td>Cadena de textos, puede estar entre (“ ”) o entre (‘ ’).</td>
+                        </tr>
+                        <tr>
+                            <td class="font_type">Int</td>
+                            <td>Números enteros tanto negativos, positivos y cero.</td>
+                        </tr>
+                        <tr>
+                            <td class="font_type">Float</td>
+                            <td>Números decimales.</td>
+                        </tr>
+                        <tr>
+                            <td class="font_type">Complex</td>
+                            <td>Números complejos.</td>
+                        </tr>
+                        <tr>
+                            <td class="font_type">Booleans</td>
+                            <td>Si son verdaderos (true) o falsos (false).</td>
+                        </tr>
+                        <tr>
+                            <td class="font_type">List</td>
+                            <td>Puede contener diferentes tipos de datos.</td>
+                        </tr>
+                        <tr>
+                            <td class="font_type">Diccionarios</td>
+                            <td>Datos ordenados en un formato clave valor.</td>
+                        </tr>
+                        <tr>
+                            <td class="font_type">Tuple</td>
+                            <td>Similar a una lista pero con la diferencia de que estas una vez creadas, no pueden ser modificados, son inmutables.</td>
+                        </tr>
+                        <tr>
+                            <td class="font_type">Set</td>
+                            <td>Solo almacena elementos únicos.</td>
+                        </tr>
+                    </table>
+            </section>
+            <section id="variables">
+                <h2>Sintaxis de Python:</h2>
+                <p>
+                    Su nomenclatura y sus nombres se pude hacer de cualquier manera pero lo más correcto en este leguaje es de la siguiente manera:
+                    <pre>
+    <code>my_variable</code>
+                    </pre>
+                    Y las maneras incorrectas de escribirlas son por ejemplo:
+                    <pre>
+                        <code>
+    firstfont_type
+    first@name
+    first$name
+    num-1
+    1mun
+    first@name
+                        </code>
+                    </pre>
+                
+            </section>
+            <section id="estruc_and_opera">
+                <h2>Fundamentos de Estructuras de Datos y Operaciones en Programación</h2>
+                <h3 id="print">Print:</h3>
+                    <p>
+                        Es el encargado de encontrar todas las variables y mostrarlos. Puede llevar diferentes argumentos, que son separados por una coma, como por ejemplo:
+                        <pre><code>print(my_variable, my_int_variable, my_bool_variable, etc)</code></pre>            
+                        Consultar tipo de dato:
+                        <pre><code>print(type(variable))</code></pre>
+                    
+                    <h4 id="sub_estopera">Funciones del sistema usando print:</h4>
+                        <p>
+                            <code>print(len(my_string_variable)):</code> cuenta los datos del sistema
+                            Variables en una sola línea (mesclar variables): ¡No es recomendable!
+                            <pre><code>print(name, surname, alias, age = “William”, “Saravia” , “Willi”, 20)</code></pre>
+                        
+                <h3 id="ope-arit">Operadores aritméticos:</h3>
+                    <p>
+                        <ul>
+                            <li>Adición (+): Sirve para sumar números y cadenas de texto, pero no entre tipos diferentes.</li>
+                            <li>Sustracción (-): Sirve para sumar números.</li>
+                            <li>Multiplicación (*): Sirve para multiplicar números.</li>
+                            <li>División (/): Sirve para dividir números.</li>
+                            <li>Módulos (%): El resto de una división.</li>
+                            <li>Flor división (//): Aproximación de la división a un número entero.</li>
+                            <li>Calcular un exponente (**): Es como multiplicar pero por dos.</li>
+                        </ul>
+                    
+                <h3 id="ope-comp">Operadores comparativos:</h3>
+                    <p>
+                        Devuelve comparaciones de verdadero o falso para todos los números que se le introduzcan.
+                        <ul>
+                            <li>Mayor que (>)</li>
+                            <li>Menor que (<)</li>
+                            <li>Mayor o igual que (>=)</li>
+                            <li>Menor o igual que (=<)</li>
+                            <li>Igual (=)</li>
+                            <li>Diferente (!=)</li>
+                        </ul>
+                    
+                <h3 id="ope-log">Operadores lógicos:</h3>
+                    <p>
+                        <ul>
+                            <li>AND: Devuelve verdadero si ambos son verdaderos.</li>
+                            <li>OR: Devuelve verdadero si uno de los dos es verdadero.</li>
+                            <li>NOT: Devuelve verdadero si el valor es falso.</li>
+                        </ul>
+                    
+                <h3 id="formato">Formateo:</h3>
+                    <p>
+                        <ul>
+                            <li>Concatenación: Se utiliza el signo + para unir cadenas de texto.</li>
+                            <li>Interpolación: Se utiliza el signo % para insertar valores en una cadena de texto.</li>
+                            <li>F-strings: Se utiliza el prefijo f para insertar valores en una cadena de texto.</li>
+                        </ul>
+                    
+                <h3 id="string">Strings:</h3>
+                    <p>
+                        <ul>
+                            <li>Indexación: Se utiliza para acceder a un carácter específico de una cadena de texto.</li>
+                            <li>Slicing: Se utiliza para obtener una subcadena de una cadena de texto.</li>
+                            <li>Métodos: Se utilizan para realizar operaciones con cadenas de texto.</li>
+                        </ul>
+                        <h4>Los Sting pueden llevar ciertos caracteres:</h4>
+                        <ul>
+                            <li><code>“\n”:</code> Salto de línea.</li>
+                            <li><code>“\t”:</code> Tabulación.</li>
+                            <li><code>“\”:</code> Caracter de escape.</li>
+                        </ul>
+                        <h4>Funciones de los String:</h4>
+                        <ul>
+                            <li><code>.upper():</code> Convierte una cadena de texto a mayúsculas.</li>
+                            <li><code>.lower():</code> Convierte una cadena de texto a minúsculas.</li>
+                            <li><code>.capitalize():</code> Convierte la primera letra de una cadena de texto a mayúscula.</li>
+                            <li><code>.title():</code> Convierte la primera letra de cada palabra de una cadena de texto a mayúscula.</li>
+                            <li><code>.strip():</code> Elimina los espacios en blanco al principio y al final de una cadena de texto.</li>
+                            <li><code>.replace():</code> Reemplaza una subcadena de una cadena de texto por otra.</li>
+                            <li><code>.split():</code> Divide una cadena de texto en una lista de subcadenas.</li>
+                            <li><code>.join():</code> Une una lista de cadenas de texto en una sola cadena.</li>
+                        </ul>
+                    
+                <h3 id="list">Listas:</h3>
+                    <p>
+                        La lista ya vendría a ser una estructura, que nos sirve para estructurar datos. Una lista se define de la siguiente manera:
+                        <pre><code>my_list = list()    →   my_list = […]</code></pre>
+                        <pre><code>my_other_list = []</code></pre>
+                        <h4>Concatenación de listas:</h4>
+                        <pre><code>print(my_list + my_other_list)</code></pre>
+                        <h4>Métodos de las listas:</h4>
+                        <ul>
+                            <li><code>.append():</code> Añade un elemento al final de una lista.</li>
+                            <li><code>.extend():</code> Añade los elementos de una lista a otra lista.</li>
+                            <li><code>.insert():</code> Inserta un elemento en una posición específica de una lista.</li>
+                            <li><code>.remove():</code> Elimina la primera aparición de un elemento de una lista.</li>
+                            <li><code>.pop():</code> Elimina un elemento de una lista por su índice.</li>
+                            <li><code>.index():</code> Devuelve el índice de la primera aparición de un elemento en una lista.</li>
+                            <li><code>.count():</code> Devuelve el número de veces que un elemento aparece en una lista.</li>
+                            <li><code>.sort():</code> Ordena los elementos de una lista.</li>
+                            <li><code>.reverse():</code> Invierte los elementos de una lista.</li>
+                        </ul>
+                        <h4>Funciones de las listas:</h4>
+                        <ul>
+                            <li><code>print(len(my_list)):</code> cuenta los datos de la lista.</li>
+                            <li><code>print(my_list[0]):</code> muestra el primer dato de la lista.</li>
+                            <li><code>print(my_list[-1]):</code> muestra el último dato de la lista.</li>
+                            <li><code>print(my_list[1:3]):</code> muestra los datos de la posición 1 a la 3.</li>
+                        </ul>
+
+                <h3 id="tuples">Tuples:</h3>
+                    <p>
+                        Las tuples son una estructura de datos que se utilizan para almacenar colecciones de datos inmutables. Se definen de la siguiente manera:
+                        <pre><code>my_tuple = tuple()    →   my_tuple = (…)</code></pre>
+                        <pre><code>my_other_tuple = ()</code></pre>
+                        <h4>Concatenación de tuplas:</h4>
+                        <pre><code>print(my_tuple + my_other_tuple)</code></pre>
+                        <h4>Métodos de las tuplas:</h4>
+                        <ul>
+                            <li><code>.count():</code> Devuelve el número de veces que un elemento aparece en una tupla.</li>
+                            <li><code>.index():</code> Devuelve el índice de la primera aparición de un elemento en una tupla.</li>
+                            <li><code>tuples = list():</code> Convierte una tuple a lista, para asi poder manipular los datos.</li>
+                            <li><code>del tuples:</code> Borra la tuple. No se pueden borrar los datos uno por uno.</li>
+                        </ul>
+                        <h4>Funciones de las tuplas:</h4>
+                        <ul>
+                            <li><code>print(len(my_tuple)):</code> cuenta los datos de la tupla</li>
+                            <li><code>print(my_tuple[0]):</code> muestra el primer dato de la tupla</li>
+                            <li><code>print(my_tuple[-1]):</code> muestra el último dato de la tupla</li>
+                            <li><code>print(my_tuple[1:3]):</code> muestra los datos de la posición 1 a la 3</li>
+                        </ul>
+                    </p>
+
+                <h3 id="sets">Sets:</h3>
+                    <p>
+                        Los sets son una estructura de datos que se utilizan para almacenar colecciones de datos únicos. Se definen de la siguiente manera:
+                        <pre><code>my_set = set()</code></pre>
+                        <pre><code>my_other_set = {…}</code></pre>
+                        <h4>Métodos de los sets:</h4>
+                        <ul>
+                            <li><code>.add():</code> Añade un elemento a un set.</li>
+                            <li><code>.remove():</code> Elimina un elemento de un set.</li>
+                            <li><code>.discard():</code> Elimina un elemento de un set si está presente.</li>
+                            <li><code>.pop():</code> Elimina un elemento de un set de forma aleatoria.</li>
+                            <li><code>.clear():</code> Elimina todos los elementos de un set.</li>
+                            <li><code>.union():</code> Devuelve la unión de dos sets.</li>
+                            <li><code>.intersection():</code> Devuelve la intersección de dos sets.</li>
+                            <li><code>.difference():</code> Devuelve la diferencia de dos sets.</li>
+                            <li><code>symmetric_difference():</code> Devuelve la diferencia simétrica de dos sets.</li>
+                        </ul>
+                        <h4>Funciones de los sets:</h4>
+                        <ul>
+                            <li><code>print(len(my_set)):</code> cuenta los datos del set</li>
+                            <li><code>print(my_set):</code> muestra los datos del set</li>
+                            <li><code>print(int in my_set):</code> Comprueba si un elemento int se encuentra en el set.</li>
+                            <li><code>print(“str” in my_set):</code> Comprueba si un elemento String se encuentra en el set.</li>
+                        </ul>
+                    </p>
+
+                <h3 id="dictionari">Diccionario:</h3>
+                    <p>
+                        Los diccionarios son una estructura de datos que se utilizan para almacenar colecciones de datos en pares clave-valor. Se definen de la siguiente manera:
+                        <pre><code>my_dict = dict()</code></pre>
+                        <pre><code>my_other_dict = {…}</code></pre>
+                        Se puden definir de las siguientes maneras:
+                        <pre>
+                            <code>
+    Case 1:
+
+        my_dict = “name”: “William”, “surname”: “Saravia”, “alias”: “Willi”, “age”: 20
+
+    Case 2:
+                            
+        my_dict = {
+            “Nombre”:“William”,
+            “Apellido”:“Antonio”,
+            “Edad”:35,
+            “Lenguajes”:{“Python”,“Swift”,“Kotlin”}
+        } 
+                            </code>
+                        </pre>
+                        
+                        Donde <code>{“Python”,“Swift”,“Kotlin”}</code>; es un set.
+                        <h4>Métodos de los diccionarios:</h4>
+                        <ul>
+                            <li><code>.get():</code> Devuelve el valor de una clave en un diccionario.</li>
+                            <li><code>.pop():</code> Elimina un elemento de un diccionario por su clave.</li>
+                            <li><code>.popitem():</code> Elimina el último elemento insertado en un diccionario.</li>
+                            <li><code>.keys():</code> Devuelve una lista con las claves de un diccionario.</li>
+                            <li><code>.values():</code> Devuelve una lista con los valores de un diccionario.</li>
+                            <li><code>.items():</code> Devuelve una lista con los pares clave-valor de un diccionario.</li>
+                            <li><code>.clear():</code> Elimina todos los elementos de un diccionario.</li>
+                            <li><code>.update():</code> Actualiza un diccionario con los elementos de otro diccionario.</li>
+                        </ul>
+                        <h4>Funciones de los diccionarios:</h4>
+                        <ul>
+                            <li><code>print(len(my_dict)):</code> cuenta los datos del diccionario</li>
+                            <li><code>print(my_dict[“key”]):</code> muestra el valor de la clave “key”</li>
+                            <li><code>print(“key” in my_dict):</code> Comprueba si una clave se encuentra en el diccionario.</li>
+                            <li><code>my_dict[“Nombre”] = “Antonio” :</code> Es para actualizar el valor que actualmente tiene “Nombre”. 
+                                También sirve para añadirle un nuevo campo al diccionario, cambiando “Nombre”, por un nuevo campo y dándole un valor.
+                            </li>
+                            <li><code>del my_dict[“Calle”] :</code> Elimina elemento del diccionario. Una ves eliminado ya no se pueden recuperar.</li>
+                        </ul>
+                    </p>
+                <h3 id="condicionales">Condicionales:</h3>
+                    <p>
+                        Los condicionales son estructuras de control que permiten tomar decisiones en un programa. Se definen de la siguiente manera:
+                            <pre>
+                                <code>
+        if condition:
+        elif condition:
+        else:
+                                </code>
+                            </pre>
+                        <h4>Operadores de comparación:</h4>
+                        <ul>
+                            <li>Mayor que (>): Devuelve verdadero si el operando de la izquierda es mayor que el de la derecha.</li>
+                            <li>Menor que (<): Devuelve verdadero si el operando de la izquierda es menor que el de la derecha.</li>
+                            <li>Mayor o igual que (>=): Devuelve verdadero si el operando de la izquierda es mayor o igual que el de la derecha.</li>
+                            <li>Menor o igual que (=<): Devuelve verdadero si el operando de la izquierda es menor o igual que el de la derecha.</li>
+                            <li>Igual (=): Devuelve verdadero si los operandos son iguales.</li>
+                            <li>Diferente (!=): Devuelve verdadero si los operandos son diferentes.</li>
+                        </ul>
+                        <h4>Operadores lógicos:</h4>
+                        <ul>
+                            <li>AND: Devuelve verdadero si ambos son verdaderos.</li>
+                            <li>OR: Devuelve verdadero si uno de los dos es verdadero.</li>
+                            <li>NOT: Devuelve verdadero si el valor es falso.</li>
+                        </ul>
+                        <h4>Ejemplos:</h4>
+                            <h5>Operadores de comparación</h5>
+                            <pre>
+                                <code>
+            x = 5
+            y = 10
+            if x > y:
+                print("x es mayor que y")
+            elif x < y:
+                print("x es menor que y")
+            else:
+                print("x es igual a y")
+                                </code>
+                            </pre>
+
+                            <h5>Operadores lógicos</h5>
+                            <pre>
+                                <code>
+            a = True
+            b = False
+            if a and b:
+                print("Ambos son verdaderos")
+            elif a or b:
+                print("Al menos uno es verdadero")
+            else:
+            print("Ambos son falsos")
+                                </code>
+                            </pre>
+                            
+                            <h5>Operador de negación</h5>
+                            <pre>
+                                <code>
+            c = False
+            if not c:
+                print("c es falso")
+            else:
+                print("c es verdadero")
+                                </code>
+                            </pre>
+                    </p>
+                <h3 id="bucles">Bucles:</h3>
+                    <p>
+                        Los bucles son estructuras de control que permiten repetir un bloque de código varias veces. Se definen de la siguiente manera:
+                        <pre>
+                            <code>
+            for variable in iterable:
+            while condition:
+                            </code>
+                        </pre>
+                        <h4 id="buc-for">Bucle for:</h4>
+                        <p>
+                            El bucle for se utiliza para iterar sobre una secuencia de elementos. Se puede utilizar con listas, tuplas, diccionarios, sets y cadenas de texto.
+                            <pre><code>for i in range(5):</code></pre>
+                            <pre><code>for i in range(1, 5):</code></pre>
+                            <pre><code>for i in range(1, 10, 2):</code></pre>
+
+                            es una estructura de control que permite iterar sobre una secuencia (como una lista, una tupla, un diccionario, un conjunto o una cadena) y ejecutar un bloque de código para cada elemento de esa secuencia. Es especialmente útil para procesar todos los elementos de una colección sin tener que gestionar manualmente el índice o la condición de terminación. Ejem.:
+                            <pre>
+                                <code>
+            frutas = ["manzana", "banana", "cereza"]
+            for fruta in frutas:
+                print(fruta)
+                                </code>
+                            </pre>
+                            Un for se va a repetir tantas veces como elementos tengamos en el parámetro definido, en este caso fruta tiene 3 elementos. A este bucle se le puede relacionar con list, tuples, set y dictionari. Esta iteración esta relacionada a conjuntos de valores.
+                            Pero también se le pude definir rangos y no necesariamente números de elementos:
+                            <pre>
+                                <code>
+            for i in range(5):
+            print(i)
+                                </code>
+                            </pre>
+                            También puede trabajar con un bucle else y además, al igual que el bucle while a este se le puede añadir el break. 
+                            <pre>
+                                <code>
+        Caso 1: // En el momento en que se rompe el for usando break, nos salimos directamente del bucle.
+            for element in my_dict:
+                print(element)
+                if element == “Edad”:
+                    break
+        Caso 2:
+            for element in my_dict:
+                print(element)
+            else:
+                print(“El bucle para diccionario a finalizado”) 
+                                </code>
+                            </pre>
+                                
+                        </p>
+                        <h4 id="buc-while">Bucle while:</h4>
+                        <p>
+                            El bucle while se utiliza para repetir un bloque de código mientras se cumpla una condición.
+                            <p class="font_text">while condition:<br>
+                            Es una estructura de control de flujo que permite repetir un bloque de código mientras una condición especificada sea verdadera. Es útil para crear bucles que continúan ejecutándose hasta que la condición cambie a falsa. Ejem.:
+                            <pre>
+                                <code>
+            contador = 0
+            while contador < 5:
+                print("Contador:", contador)
+                contador += 1
+                                </code>
+                            </pre>
+                            En este bucle debemos de buscar que la condición sea eventualmente falsa, porque si no este será un bucle infinito.
+                            También le podemos añadir un else, pero sin un if:
+                            <pre>
+                                <code>
+            contador = 0
+            while contador < 5:
+                print("Contador:", contador)
+                contador += 1
+            else:
+                print(“Mi condición es mayor o igual que 5”)
+                                </code>
+                            </pre>
+                            También podemos añadir una condición en concreta y si además de eso queremos que cuando llegue a esa condición en concreta el bucle se detenga, añadiremos break
+                            <pre>
+                                <code>
+            contador = 0
+            while True:
+                print("Contador:", contador)
+                contador += 1
+                if contador >= 5:
+                break
+                                </code>
+                            </pre>
+                                  
+                        </p>                       
+                    </p>
+                <h3 id="funciones">Funciones:</h3>
+                    <p>
+                        Las funciones son bloques de código que se pueden reutilizar en un programa. Se definen de la siguiente manera:
+                        <pre><code>def function_name(parameters):</code></pre>
+                        <h4>Definición de funciones:</h4>
+                        <p>
+                            Las funciones son bloques de código que se pueden reutilizar en un programa. Se definen de la siguiente manera:
+                            <pre>
+                                <code>
+            def name ():   // Crear función
+                print(“Esto es una funcion”)
+            name ()   // Llamar a la función
+                                </code>
+                            </pre>
+                            En este caso, la función name () recibe un parámetro y muestra un mensaje de saludo con el parametro proporcionado. 
+                            La función se llama con el argumento.
+                            <h4>Parámetros:</h4>
+                            También puede tener parámetros que definen con que es con lo que trabajara la función y la función 
+                            aceptara tantos valores como los parámetros que se definió al momento de crear la función y no es 
+                            necesario definir el tipo de variable solo es necesario que le metamos variables que puedan concatenar, 
+                            pero si lo quieres definir lo haces al momento de crear una función:
+                            <pre>
+                                <code>
+            def sum_two_values (num1, num2): // Definir parámetros
+                print(num1 + num2)
+            sum_two_values (5, 7)  // Darles valores a los parámetros
+                                </code>
+                            </pre>
+                            Cabe recalcar que debemos de tener en cuenta que no con todas las variables se pueden realizar todas las 
+                            funciones.
+                            La función además de poder recibir parámetros también puede retornarlos:
+                            <pre>
+                                <code>
+            def sum_two_values (num1, num2):
+                return num1 + num2  // Valor que nos va a retornar
+            my_result = sum_two_values (5, 7)  
+            print(my_result)
+                                </code>
+                            </pre>
+                            Para interpolar los datos ingresado en variables String se estructura de la siguiente manera:
+                            <pre>
+                                <code>
+            def print_name (name, surname, alias = “Sin alias”):
+                print(f“{name}  {surname}  {alias}”)
+            print_name(“Leon”,“Willi”,“Wallace”) // Este alias remplaza al ya definido
+                                </code>
+                            </pre>
+                            En Python, puedes usar las f-strings (cadenas formateadas: <code>f“{name}  {surname}  {alias}”</code>) para 
+                            insertar variables dentro de una cadena de texto. Las f-strings se crean colocando una 'f' antes de las comillas que delimitan la 
+                            cadena y luego encerrando las variables entre llaves {}. <br>
+                            Cuando yo quiera darle o agregar cualquier tipo de datos se usa la siguiente sintaxis y prácticamente es 
+                            como si yo le enviara elementos infinitos. Los parámetros se deben de separar por una coma:
+                            <pre>
+                                <code>
+            def print_text (*text)
+                print(text)
+            print_name(“Hola”,“Python”,“Back”) 
+                                </code>
+                            </pre>
+
+                    </p>
+                
+                <h3 id="clases">Clases:</h3>
+                    <p>
+                        Las clases son plantillas que se utilizan para crear objetos en Python. Se definen de la siguiente manera:
+                        <pre><code>class ClassName:</code></pre>
+                        <h4>Definición de clases:</h4>
+                        Las clases son plantillas que se utilizan para crear objetos en Python. Se definen de la siguiente manera:
+                        <pre>
+                            <code>
+            class Person:
+                def __init__(self, name, age):
+                    self.name = name
+                    self._age = age // Atributo privado
+            my_person = Person(name, surname)
+                            </code>
+                        </pre>
+                        <h4>Funciones de las clases:</h4>
+                        <ul>
+                            <li><code>__init__():</code> Método especial que se llama cuando se crea un objeto de la clase.</li>
+                            <li><code>self:</code> Hace referencia al objeto actual.</li>
+                            <li><code>__str__():</code> Método especial que se llama cuando se convierte un objeto a una cadena de texto.</li>
+                            <li><code>__del__():</code> Método especial que se llama cuando se elimina un objeto de la memoria.</li>
+                            <li><code>__repr__():</code> Método especial que se llama cuando se representa un objeto.</li>
+                            <li><code>__len__():</code> Método especial que se llama cuando se obtiene la longitud de un objeto.</li>
+                            <li><code>__getitem__():</code> Método especial que se llama cuando se obtiene un elemento de un objeto.</li>
+                            <li><code>__setitem__():</code> Método especial que se llama cuando se establece un elemento de un objeto.</li>
+                            <li><code>__delitem__():</code> Método especial que se llama cuando se elimina un elemento de un objeto.</li>
+                        </ul>
+                        <h4>Operaciones de las clases:</h4>
+                        <ul>
+                            <li>Instanciación: Crear un objeto de una clase.</li>
+                            <li>Atributos: Variables que almacenan información sobre un objeto.</li>
+                            <li>Métodos: Funciones que realizan operaciones con un objeto.</li>
+                            <li>Herencia: Crear una nueva clase a partir de una clase existente.</li>
+                            <li>Encapsulación: Ocultar los detalles de implementación de un objeto.</li>
+                            <li>Polimorfismo: Capacidad de un objeto para tomar muchas formas.</li>
+                        </ul>
+                    </p>
+
+                <h3 id="excepciones">Excepciones:</h3>
+                    <p>
+                        Las excepciones son errores que ocurren durante la ejecución de un programa. Se definen de la siguiente manera:
+                        <pre><code>try:</code></pre>
+                        <pre><code>except Exception as e:</code></pre>
+                        <h4>Definición de excepciones:</h4>
+                        Las excepciones son errores que ocurren durante la ejecución de un programa. Se definen de la siguiente manera:
+                        <pre>
+                            <code>
+            try:
+                result = 10 / 0
+            except ZeroDivisionError as e:
+                print("Error:", e)
+                            </code>
+                        </pre>
+                        <h4>Tipos de excepciones:</h4>
+                        <ul>
+                            <li><code>ZeroDivisionError:</code> Error que ocurre al dividir un número por cero.</li>
+                            <li><code>ValueError:</code> Error que ocurre al pasar un argumento con un tipo incorrecto.</li>
+                            <li><code>TypeError:</code> Error que ocurre al realizar una operación con un tipo incorrecto.</li>
+                            <li><code>IndexError:</code> Error que ocurre al acceder a un índice fuera de rango.</li>
+                            <li><code>KeyError:</code> Error que ocurre al acceder a una clave inexistente en un diccionario.</li>
+                            <li><code>FileNotFoundError:</code> Error que ocurre al intentar abrir un archivo que no existe.</li>
+                            <li><code>ImportError:</code> Error que ocurre al importar un módulo que no existe.</li>
+                            <li><code>ModuleNotFoundError:</code> Error que ocurre al importar un módulo que no existe.</li>
+                            <li><code>AttributeError:</code> Error que ocurre al acceder a un atributo inexistente en un objeto.</li>
+                            <li><code>Exception:</code> Clase base para todas las excepciones en Python.</li>
+                        </ul>
+                        <h4>Manejo de excepciones:</h4>
+                        <ul>
+                            <li><code>try:</code> Bloque de código que puede lanzar una excepción.</li>
+                            <li><code>except:</code> Bloque de código que se ejecuta si se lanza una excepción.</li>
+                            <li><code>else:</code> Bloque de código que se ejecuta si no se lanza una excepción.</li>
+                            <li><code>finally:</code> Bloque de código que se ejecuta siempre, independientemente de si se lanza una excepción.</li>
+                        </ul>
+                        Ejemplo:
+                        <pre>
+                            <code>
+            try:
+                result = 10 / 0
+            except ZeroDivisionError as e:
+                print("Error:", e)
+            else:
+                print("La división se realizó correctamente")
+            finally:
+                print("Fin del programa")
+                            </code>
+                        </pre>
+                        La captura de excepción por tipo:
+                        <pre>
+                            <code>
+            try:
+                print(num1 + num2)
+                print(“No se ha producido un error”)
+            except ValueError as error:
+                print(error)
+                            </code>
+                        </pre>
+                    </p>
+
+                <h3 id="modulos">Módulos:</h3>
+                    <p>
+                        Los módulos son archivos que contienen funciones, clases y variables que se pueden reutilizar en un programa. Se definen de la siguiente manera:
+                        <pre><code>import module_name</code></pre>
+                        <pre><code>from module_name import function_name</code></pre>
+                        <h4>Definición de módulos:</h4>
+                        Los módulos son archivos que contienen funciones, clases y variables que se pueden reutilizar en un programa. Se definen de la siguiente manera:
+                        <pre>
+                            <code>
+            import math
+            print(math.pi)
+                            </code>
+                        </pre>
+                        <h4>Tipos de módulos:</h4>
+                        <ul>
+                            <li>Módulos estándar: Módulos que vienen incluidos con Python.</li>
+                            <li>Módulos de terceros: Módulos que se instalan a través de un gestor de paquetes.</li>
+                            <li>Módulos personalizados: Módulos creados por el usuario.</li>
+                        </ul>
+                        <h4>Importación de módulos:</h4>
+                        <ul>
+                            <li><code>import module_name:</code> Importa todo el módulo.</li>
+                            <li><code>from module_name import function_name:</code> Importa una función específica del módulo.</li>
+                            <li><code>from module_name import *:</code> Importa todas las funciones del módulo.</li>
+                            <li><code>import module_name as alias:</code> Importa el módulo con un alias.</li>
+                        </ul>
+                        <h4>Uso de módulos:</h4>
+                        <ul>
+                            <li><code>import module_name as alias:</code> Llama a una función de un módulo.</li>
+                            <li><code>module_name.variable_name:</code> Accede a una variable de un módulo.</li>
+                        </ul>
+            </section>
+        </main>
+        <a href="#inicio" class="scroll-to-top" title="Volver al inicio"><img src="Imagenes/icons8-flecha-100.png" alt="" height="40x"></a>
+        <footer>
+            <p>© 2024 Manual interactivo de Python
+        </footer>
+    </body>
+</html>
